@@ -11,7 +11,7 @@ export const Home = () => (
   <div className="slider">
     <Slider/>
   </div>
-    <Container style={{paddingTop: '2rem', paddingButton: '2rem'}}>
+    <Container className="padforcard">
       <Row>
 
         <Col>
