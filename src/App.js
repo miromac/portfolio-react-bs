@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NaviBar from './components/Navibar';
 
 import {
-  BrowserRouter as Router,
   Routes,
   Route } from "react-router-dom";
 
@@ -18,7 +17,7 @@ function App() {
     <>
       <NaviBar/>
       <Routes>
-        <Route exact path="/home" element={<Home/>} />
+        <Route  path="/" element={<Home/>} />
         <Route  path="/about" element={<About/>} />
         <Route  path="/skills" element={<Skills/>} />
         <Route  path="/services" element={<Services/>} />

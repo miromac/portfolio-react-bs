@@ -1,6 +1,10 @@
 import React from "react";
 import '../styles.css';
+import Slider from "./Slider";
 
 export const Home = () => (
-  <h1 className="c-mt-20">Home Page</h1>
+  <div className="slider">
+    <Slider/>
+  </div>
+  
 )
