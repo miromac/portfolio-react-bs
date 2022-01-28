@@ -15,7 +15,7 @@ export default function Slider() {
           alt="Angular"
           />
           <Carousel.Caption>
-            <h3>Demo Protfolio</h3>
+            <h3>Demo Portfolio</h3>
             <p>Let&rsquo;s discover new technologis for you</p>
           </Carousel.Caption>
       </Carousel.Item>
@@ -26,7 +26,7 @@ export default function Slider() {
           alt="React"
           />
           <Carousel.Caption>
-            <h3>Demo Protfolio</h3>
+            <h3>Demo Portfolio</h3>
             <p>Let&rsquo;s discover new technologis for you</p>
           </Carousel.Caption>
       </Carousel.Item>
@@ -37,7 +37,7 @@ export default function Slider() {
           alt="Vue"
           />
           <Carousel.Caption>
-            <h3>Demo Protfolio</h3>
+            <h3>Demo Portfolio</h3>
             <p>Let&rsquo;s discover new technologis for you</p>
           </Carousel.Caption>
       </Carousel.Item>
