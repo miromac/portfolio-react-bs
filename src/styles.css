@@ -24,3 +24,87 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
+
+/* Home styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #FFF;
+}
+
+.home .infoBx {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10em;
+}
+
+.home .infoBx a:hover {
+  background: #6b4747;
+  color: #000;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.home .infoBx h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: rgb(88, 67, 87);
+}
+
+.home .infoBx h1 span{
+  font-size: 0.6em;
+  font-weight: 400;
+}
+
+.home .infoBx a {
+  position: relative;
+  cursor: pointer;
+  background: dodgerblue;
+  color: #FFF;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.home .infoBx a:hover {
+  background: #3333ff;
+  color: #F2F2F2;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.home .imgBx {
+  width: 40%;
+  height: 100vh;
+  background: dodgerblue;
+}
+
+.home .imgBx img {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  height: 500px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+.home .imgBx img:hover {
+  transform: translate(-15px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Home styles end */

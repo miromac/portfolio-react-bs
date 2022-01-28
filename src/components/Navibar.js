@@ -7,7 +7,9 @@ export default function NaviBar() {
     <>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand>Portfolio-Demo</Navbar.Brand>
+        <Navbar.Brand>
+          <Nav.Link as={Link} to={"/"}>Portfolio-Demo</Nav.Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
@@ -19,7 +21,7 @@ export default function NaviBar() {
           </Nav>
           <Nav className="ms-auto">
             <Button variant="primary" style={{marginRight: '15px'}}>Log In</Button>{' '}
-            <Button variant="primary">Log Out</Button>
+            <Button variant="primary">Register</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
