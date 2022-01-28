@@ -1,6 +1,28 @@
 import React from "react";
 import '../styles.css';
+import img from '../pictures/img.png';
+import { Image } from "react-bootstrap";
 
 export const About = () => (
-  <h1 className="c-mt-20">About Page</h1>
+  <div>
+    <section className="about">
+      <div className="imgBx">
+        <Image src={img} alt="img"></Image>
+      </div>
+      <div className="infoBx">
+        <h2>About Me</h2>
+        <p>Full Stack Developer</p>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a href="#">Download CV</a>
+      </div>
+    </section>
+  </div>
 )
