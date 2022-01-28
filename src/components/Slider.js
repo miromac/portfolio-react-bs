@@ -9,33 +9,39 @@ export default function Slider() {
     <>
     <Carousel variant="dark">
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={angular}
-          alt="Angular"
-          />
+        <div style={{paddingBottom: '20px'}}>
+          <img
+            className="d-block w-100"
+            src={angular}
+            alt="Angular"
+            />
+        </div>
           <Carousel.Caption>
             <h3>Demo Portfolio</h3>
             <p>Let&rsquo;s discover new technologis for you</p>
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={react}
-          alt="React"
-          />
+        <div style={{paddingBottom: '20px'}}>
+          <img
+            className="d-block w-100"
+            src={react}
+            alt="React"
+            />
+        </div>
           <Carousel.Caption>
             <h3>Demo Portfolio</h3>
             <p>Let&rsquo;s discover new technologis for you</p>
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={vue}
-          alt="Vue"
-          />
+        <div style={{paddingBottom: '20px'}}>
+          <img
+            className="d-block w-100"
+            src={vue}
+            alt="Vue"
+            />
+        </div>
           <Carousel.Caption>
             <h3>Demo Portfolio</h3>
             <p>Let&rsquo;s discover new technologis for you</p>
