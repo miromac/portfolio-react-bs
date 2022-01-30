@@ -3,7 +3,7 @@ import { Container, Table, ProgressBar } from "react-bootstrap";
 import '../styles.css';
 
 export const Skills = () => (
-  <Container className="containerSet">
+  <Container className="skills">
   <Table striped bordered hover size="sm">
   <thead>
     <tr>

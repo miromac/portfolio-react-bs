@@ -4,6 +4,10 @@
   margin-top: 100px;
 }
 
+.navbar-nav button:nth-child(1) {
+  margin-right: 10px;
+}
+
 .slider {
   margin: auto;
   margin-top: 10px;
@@ -16,15 +20,21 @@
 }
 
 .padforcard {
-  padding-top: '2rem';
-  padding-bottom: 2rem;
-}
-
-.containerSet {
-  padding-bottom: 2rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
+.footer {
+  position: absolute;
+  width: 100%;
+  background: #212121;
+  color: #FFF;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: auto;
+}
 /* Home styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -32,6 +42,7 @@
 .home {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -86,6 +97,7 @@
 }
 
 .home .imgBx {
+  flex-direction: column;
   width: 40%;
   height: 100vh;
   background: dodgerblue;
@@ -113,10 +125,11 @@
   background: #F2F2F2;
    position: relative;
    display: flex;
+   flex-direction: row;
    justify-content: center;
    align-items: center;
    width: 100%;
-   height: 100vh;
+   min-height: 100vh;
  }
 
  .about .imgBx {
@@ -144,7 +157,8 @@
 .about .infoBx {
   background: #F2F2F2;
   width: 60%;
-  height: 100vh;
+  /* height: 100vh; */
+  min-block-size: auto;
   margin-left: 15em;
   padding: 10em;
   display: flex;
@@ -181,6 +195,18 @@
   color: #F2F2F2;
   box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
+
+/* skills styles */
+
+.skills {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
 /* contact styles */
 
 .contacts {
@@ -438,9 +464,13 @@
 }
 
 @media (max-width: 991px) {
+  .navbar-nav button:nth-child(1) {
+    margin-right: 0px;
+  }
   .home .imgBx {
     width: 100%;
     height: 60vh;
+    margin-bottom: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,7 +495,7 @@
   .about .imgBx {
     width: 100%;
     height: 60vh;
-    margin-top: 20%;
+    margin-top: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -515,6 +545,28 @@
 }
 
 @media (max-width: 600px) {
+  .navbar-nav button:nth-child(1) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .slider {
+    width: 90%;
+    height: 60%;
+  }
+  .padforcard {
+    width: min-content;
+  }
+  .padforcard .col {
+    padding-bottom: 20px;
+  }
   .contacts .container .contactForm {
     padding: 25px;
   }
@@ -527,3 +579,4 @@
     margin-top: 40px;
   }
 }
+

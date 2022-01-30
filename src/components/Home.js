@@ -1,13 +1,10 @@
 import React from "react";
 import '../styles.css';
 import img from '../pictures/img.png';
-import { Container, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 export const Home = () => (
   <div>
-    {/* <h1 className="c-mt-20">Home Page</h1> */}
-    {/* <!-- Loading Animation --> */}
-    <div>
       <section className="home">
         <div className="infoBx">
           <h1><span>Hi,</span><br />
@@ -20,6 +17,5 @@ export const Home = () => (
           <Image src={img} alt="img"></Image>
         </div>
       </section>
-    </div>
   </div>
 )

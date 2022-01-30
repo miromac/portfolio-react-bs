@@ -20,7 +20,7 @@ export default function NaviBar() {
             <Nav.Link as={Link} to={"/contacts"}>Contacts</Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-            <Button variant="primary" style={{marginRight: '15px'}}>Log In</Button>{' '}
+            <Button variant="primary">Log In</Button>{' '}
             <Button variant="primary">Register</Button>
           </Nav>
         </Navbar.Collapse>
