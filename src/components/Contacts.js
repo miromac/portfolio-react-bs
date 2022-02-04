@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import '../styles.css';
 
-export const Contacts = () => (
+export const Contacts = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // The user ID is required. To find this ID, visit https://dashboard.emailjs.com/admin/integration
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+      .then((result) => {
+          console.log(result.text);
+          alert('Your message is delivered!');
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  return (
   <div>
     <section className="contacts">
       <div className="container">
@@ -18,7 +36,7 @@ export const Contacts = () => (
             </li>
             <li>
               <span><i className="fas fa-envelope-open-text"></i></span>
-              <span>your.mail@gmail.com</span>
+              <span>my.mail@gmail.com</span>
             </li>
             <li>
               <span><i className="fas fa-phone-alt"></i></span>
@@ -35,26 +53,29 @@ export const Contacts = () => (
         </ul>
       </div>
       <div className="contactForm">
+      <form ref={form} onSubmit={sendEmail}>
         <h2>Send a Message</h2>
         <div className="formBox">
           <div className="inputBox w50">
-            <input type="text" name="" required />
-            <span>First Name</span>
+            <input type="text" name="from_name" id="from_name" required />
+            <span>Your Name</span>
           </div>
           <div className="inputBox w50">
-            <input type="text" name="" required />
-            <span>Email Address</span>
+            <input type="text" name="reply_to" id="reply_to" required />
+            <span>Your Email</span>
           </div>
           <div className="inputBox w100">
-            <textarea name="" required></textarea>
+            <textarea name="message" id="message" required></textarea>
             <span>Write Your Message here...</span>
           </div>
           <div className="inputBox w50">
-            <input type="submit" name="" value="Send" />
+            <input type="submit" name="" id="button" value="Send" />
           </div>
         </div>
+        </form>
         </div>
       </div>
     </section>
   </div>
-)
+  )
+}
