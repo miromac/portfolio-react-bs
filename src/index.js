@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
+const loadingMarkup = (
+  <div className="py-4 text-center">
+    <h3>Loading..</h3>
+  </div>
+)
 
-    <Router>
-      <App />
-    </Router>
-    
-  </React.StrictMode>,
+ReactDOM.render(
+  <Suspense fallback={loadingMarkup}>
+    <React.StrictMode>
+
+      <Router>
+        <App />
+      </Router>
+      
+    </React.StrictMode>,
+  </Suspense>,
   document.getElementById('root')
 );
 
