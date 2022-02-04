@@ -8,6 +8,13 @@
   margin-right: 10px;
 }
 
+.divGlobus {
+  margin-left: 20px;
+  display: flex;
+  align-content: center;
+  align-items: center
+}
+
 .slider {
   margin: auto;
   margin-top: 10px;
@@ -548,6 +555,9 @@
   .navbar-nav button:nth-child(1) {
     margin-right: 0px;
     margin-bottom: 10px;
+  }
+  .divGlobus svg {
+    display: none;
   }
   .home {
     flex-direction: column;
